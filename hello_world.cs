@@ -1,34 +1,24 @@
 using System;
-namespace helloWorld{/* is namespace declarartion?*/
+namespace helloworld{/* is namespace declarartion?*/
 
-public class Hello/* a class?*/
+public class hello/* a class?*/
 {
-    public static void Main()/*a main method*/
+    public void greet()/*a class method*/
     {
         System.Console.WriteLine("Hello, World!");/*statement*/
     }
 }
-}
+}/*name space ends */
 
-// /* a main method */
-// /* expressions need to be assigned? */
 
-// /* notes below */
-// namespace SampleNamespace
-// {
-//     class SampleClass
-//     {
-//         public void SampleMethod()
-//         {
-//             // a comment line
-//             System.Console.WriteLine(
-//               "Hello world");
-//         }
-//     }
-// }
 
-// static void Main()/*this is how you write main functions in c# */
-// {
-//     //...
-// }
-
+ public class maingreetingclass
+    {
+        public static void Main()/*a main method*/
+        {
+    
+            var greetsworld = new helloworld.hello();
+            greetsworld.greet();
+            
+        }
+    }
